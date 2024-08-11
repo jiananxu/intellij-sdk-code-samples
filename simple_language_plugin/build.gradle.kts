@@ -9,7 +9,9 @@ group = "org.intellij.sdk"
 version = "2.0.0"
 
 repositories {
-  mavenCentral()
+    mavenLocal()
+    maven { url=uri("https://maven.aliyun.com/repository/public/") }
+    mavenCentral()
 }
 
 // Include the generated files in the source set
